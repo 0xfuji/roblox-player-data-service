@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a problem with Roblox Player Data Service
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please include enough information to reproduce it.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+      placeholder: Explain the issue clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can it be reproduced?
+      description: Include a small example or the steps that trigger the issue.
+      placeholder: |
+        1. Set up...
+        2. Call...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Roblox Studio output
+      description: Paste any relevant warnings or errors here.
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: v0.1.0
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked that this issue has not already been reported.
+          required: true
+        - label: I removed any private game data, API keys, or other sensitive information.
+          required: true
