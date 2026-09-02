@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+# Roblox / Rojo build output
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Tooling
+sourcemap.json
