@@ -1,0 +1,30 @@
+{
+  "name": "roblox-player-data-service",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "PlayerData": {
+        "$className": "Folder",
+        "Server": {
+          "$className": "Folder",
+          "DataService": {
+            "$path": "src/server/DataService.luau"
+          },
+          "DataValidator": {
+            "$path": "src/server/DataValidator.luau"
+          }
+        },
+        "Shared": {
+          "$className": "Folder",
+          "DataTemplate": {
+            "$path": "src/shared/DataTemplate.luau"
+          }
+        }
+      },
+      "Example": {
+        "$path": "examples/Example.server.luau"
+      }
+    }
+  }
+}
